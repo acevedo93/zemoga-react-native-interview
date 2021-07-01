@@ -1,4 +1,4 @@
-# ZEMOGA Native Technical Interview
+# ZEMOGA React Native Technical Interview
 
 ### Objective
 
