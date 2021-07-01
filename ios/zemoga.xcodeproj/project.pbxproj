@@ -43,6 +43,7 @@
 		52F04A44589BD9D6EF9E7653 /* libPods-zemoga-zemogaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zemoga-zemogaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = zemoga/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886AC47E2A560A0CAD84243A /* Pods-zemoga-zemogaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemoga-zemogaTests.debug.xcconfig"; path = "Target Support Files/Pods-zemoga-zemogaTests/Pods-zemoga-zemogaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E05EBCFE268D08C000B9AA62 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -104,7 +105,6 @@
 				886AC47E2A560A0CAD84243A /* Pods-zemoga-zemogaTests.debug.xcconfig */,
 				329E44B2B1A70FB25590FEF8 /* Pods-zemoga-zemogaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +128,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E05EBCF7268D08A500B9AA62 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* zemoga */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* zemogaTests */,
@@ -147,6 +148,14 @@
 				00E356EE1AD99517003FC87E /* zemogaTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E05EBCF7268D08A500B9AA62 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E05EBCFE268D08C000B9AA62 /* Ionicons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

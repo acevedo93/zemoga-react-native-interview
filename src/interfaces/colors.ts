@@ -1,0 +1,37 @@
+export interface Colors {
+  primary: string;
+  primaryContrast: string;
+  primaryShade: string;
+  primaryTint: string;
+  secondary: string;
+  secondaryContrast: string;
+  secondaryShade: string;
+  secondaryTint: string;
+  tertiary: string;
+  tertiaryContrast: string;
+  tertiaryShade: string;
+  tertiaryTint: string;
+  success: string;
+  successContrast: string;
+  successShade: string;
+  successTint: string;
+  warning: string;
+  warningContrast: string;
+  warningShade: string;
+  warningTint: string;
+  danger: string;
+  dangerContrast: string;
+  dangerShade: string;
+  dangerTint: string;
+  dark: string;
+  darkShade: string;
+  darkTint: string;
+  medium: string;
+  mediumContrast: string;
+  mediumShade: string;
+  mediumTint: string;
+  light: string;
+  lightContrast: string;
+  lightShade: string;
+  lightTint: string;
+}

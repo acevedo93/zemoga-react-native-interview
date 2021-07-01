@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const booksApi = axios.create({
-  baseURL: `https://jsonplaceholder.typicode.com/posts`,
+export const postsApi = axios.create({
+  baseURL: `https://jsonplaceholder.typicode.com`,
 });
 
-export default booksApi;
+export default postsApi;
