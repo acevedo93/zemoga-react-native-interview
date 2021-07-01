@@ -16,12 +16,8 @@ considering the size of the app I decided to use context as a state manager inst
 To initialize the project, the following commands must be executed:
 
 - npm install
-
 - json-server --watch db.json
-
 - npm run android
-  as the database is localhost, use the ip of the machine instead of localhost, or with the android emulator open execute the command adb reverse tcp:3000 tcp:3000
-
 - pod install inside the ios folder
 - npm run ios
 
