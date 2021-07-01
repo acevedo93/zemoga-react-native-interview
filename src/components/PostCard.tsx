@@ -1,22 +1,25 @@
 import React from 'react';
-import {View, Text, StyleSheet, useColorScheme, useContext} from 'react-native';
+import {View, Text, StyleSheet, Animated} from 'react-native';
 import {IPost} from '../interfaces/posts';
 import {colors} from '../styles/colors';
 import {globalStyles} from '../styles/globalStyles';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
 import {Star} from './Star';
 import {Dot} from './Dot';
-import {PostsContext} from '../context/posts/PostsContext';
+
 import {DeleteSingle} from './DeleteSingle';
+import {useAnimation} from '../hooks/useAnimation';
 interface Props {
   post: IPost;
 }
-export const PostCard = ({post}: Props) => {
+export const PostCard = React.memo(({post}: Props) => {
+  const {opacityAnimation, fadeIn} = useAnimation();
+  fadeIn();
+
   const Navigator = useNavigation();
   return (
-    <View style={styles.cardContainer}>
+    <Animated.View style={{...styles.cardContainer, opacity: opacityAnimation}}>
       {!post.isSeen ? <Dot /> : <Star post={post} />}
 
       <View style={styles.bodyContainer}>
@@ -29,9 +32,9 @@ export const PostCard = ({post}: Props) => {
         </TouchableOpacity>
       </View>
       <DeleteSingle postId={post.id} />
-    </View>
+    </Animated.View>
   );
-};
+});
 
 const styles = StyleSheet.create({
   cardContainer: {

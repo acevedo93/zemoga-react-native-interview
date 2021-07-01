@@ -19,6 +19,9 @@ export const tabBarOptions = {
   cardStyle: {
     backgroundColor: 'white',
   },
+  sceneContainerStyle: {
+    backgroundColor: '#fff',
+  },
   style: {
     backgroundColor: colors.tertiary,
     borderBottomWidth: 0,

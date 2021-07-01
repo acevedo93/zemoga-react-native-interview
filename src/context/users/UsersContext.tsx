@@ -6,7 +6,7 @@ import {UsersState, usersReducer} from './usersReducer';
 import {IUser} from '../../interfaces/users';
 
 interface UserContextProps extends UsersState {
-  getUserById: (id: string) => Promise<void>;
+  getUserById: (id: string | undefined) => Promise<void>;
 }
 
 const usersInitialState: UsersState = {

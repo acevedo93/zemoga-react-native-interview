@@ -16,7 +16,6 @@ interface PostContextProps extends PostsState {
 const postsInitialState: PostsState = {
   posts: [],
   post: null,
-  favotitePosts: [],
   loading: false,
   error: {
     status: false,
@@ -79,7 +78,6 @@ export const PostProvider = ({children}: any) => {
       if (post.id.toString() === postId) {
         post.isFav = newState;
       }
-
       return post;
     });
     dispatch({type: 'FAV_POSTS', payload: {posts: favPosts}});
@@ -93,7 +91,7 @@ export const PostProvider = ({children}: any) => {
   const deleteAll = () => {
     dispatch({
       type: 'DELETE_ALL_POSTS',
-      payload: {warning: 'Refresca los datos '},
+      payload: {warning: 'Refresh data'},
     });
   };
 

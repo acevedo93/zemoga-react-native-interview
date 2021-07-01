@@ -6,7 +6,7 @@ import postsApi from '../../api/postApi';
 import {IComment} from '../../interfaces/comments';
 
 interface CommentsContextProps extends CommentsState {
-  getCommentsByPostId: (id: string) => Promise<void>;
+  getCommentsByPostId: (id: string | undefined) => Promise<void>;
 }
 
 const commentsInitialState: CommentsState = {

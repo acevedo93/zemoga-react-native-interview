@@ -3,7 +3,6 @@ import {IPost} from '../../interfaces/posts';
 
 export interface PostsState {
   posts: IPost[] | [];
-  favotitePosts: IPost[] | [];
   loading: boolean;
   error: IError | undefined;
   post: IPost | null;
@@ -63,6 +62,10 @@ export const postReducer = (
     case 'ERROR':
       return {
         ...state,
+        error: {
+          status: true,
+          msg: action.payload.msg,
+        },
       };
     case 'LOADING':
       return {
@@ -72,6 +75,7 @@ export const postReducer = (
           status: false,
           msg: '',
         },
+        post: null,
       };
     case 'DELETE_ALL_POSTS':
       return {
@@ -86,7 +90,6 @@ export const postReducer = (
     case 'DELETE_POST':
       return {
         ...state,
-
         posts: action.payload.posts,
         post: null,
       };

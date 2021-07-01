@@ -15,7 +15,12 @@ export const DeleteSingle = ({postId}: Props) => {
         onPress: () => {},
         style: 'cancel',
       },
-      {text: 'OK', onPress: () => deletePost(postId)},
+      {
+        text: 'OK',
+        onPress: () => {
+          deletePost(postId);
+        },
+      },
     ]);
   };
 
